@@ -1,0 +1,37 @@
+﻿<Window x:Class="Ripper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ripper"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="173*"/>
+            <RowDefinition Height="246*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="1" Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Label FontSize="40" Margin="10" FontWeight="SemiBold" Content="Ripper"></Label>
+            <Grid Background="Wheat" Height="15" VerticalAlignment="Bottom" Margin="10" ></Grid>
+            <Frame Grid.Row="1" x:Name="MainFrame" Content="Соберём мебель в 2 счёта"></Frame>
+        </Grid>
+        <Image Source="logor.jpg" Grid.Row="0"> </Image>
+        <StackPanel VerticalAlignment="Bottom" Grid.Row="1">
+            <Button Click="open_otrasl" Height="25" Grid.Row="1">Инфо</Button>
+            <Button Click="open_robo" Height="25" Grid.Row="1">СИЗ</Button>
+            <Button Click="open_inst" Height="25" Grid.Row="2">Инструменты</Button>
+        </StackPanel>
+        
+    </Grid>
+</Window>
