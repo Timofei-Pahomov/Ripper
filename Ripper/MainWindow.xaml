@@ -28,9 +28,9 @@
         </Grid>
         <Image Source="logor.jpg" Grid.Row="0"> </Image>
         <StackPanel VerticalAlignment="Bottom" Grid.Row="1">
-            <Button Click="open_otrasl" Height="25" Grid.Row="1">Инфо</Button>
-            <Button Click="open_robo" Height="25" Grid.Row="1">СИЗ</Button>
-            <Button Click="open_inst" Height="25" Grid.Row="2">Инструменты</Button>
+            <Button Click="open_otrasl" Height="25" Grid.Row="1">информация</Button>
+            <Button Click="open_robo" Height="25" Grid.Row="1">сиз</Button>
+            <Button Click="open_inst" Height="25" Grid.Row="2">инструменты</Button>
         </StackPanel>
         
     </Grid>
